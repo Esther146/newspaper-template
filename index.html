@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Esther Anierobi">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css layout</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main class="container">
+        <section class="nav">
+            <p>Classic city newspaper template</p>
+            <p class="the-date">
+                <ul>
+                    <li><strong>Thursday, March 31, Issue</strong></li>
+                </ul>
+            </p>
+            <hr>
+        </section>
+            
+        <section class="headsection">
+    
+            <h1>CITY NEWS</h1>
+            <h3 class="cheat-sheat">THE CLASSIC NEWSPAPER TEMPLATE</h3>
+            <hr />
+        </section>
+            
+        <section class="explain-section">
+            <h4><i>"The css grid layout module, Basic Concept of grid layout"</i></h4>
+            <p>CSS Grid Layout introduces a two-dimensional grid system to CSS.
+                Grids can be used to lay out major page areas or small user interface elements. 
+                This article introduces the CSS Grid Layout and the new 
+                terminology that is part of the CSS Grid Layout Level 1 specification.
+                The features shown in this overview will then be explained in greater 
+                detail in the rest of this guide.We define rows and columns on our grid with 
+                the grid-template-columns and grid-template-rows properties. These define grid tracks.
+                A grid track is the space between any 
+                two lines on the grid. In the below image you can see a track highlighted – this is the
+                first row track in our grid.In this final example, we mix absolute sized tracks with fr units.
+                The first track is 500 pixels, so the fixed width is taken away from the available space. 
+                The remaining space is divided into three and assigned in proportion to the two flexible tracks.
+                When creating our example grid we specifically defined our column tracks with the grid-template-columns property,
+                but the grid also created rows on its own. These rows are part of the implicit grid. Whereas the
+                explicit grid consists of any rows and columns defined with grid-template-columns or grid-template-rows.
+                If you place something outside of the defined grid—or due to the amount of content, more grid tracks 
+                are needed—then the grid creates rows and columns in the implicit grid. These tracks will be auto-sized by default, 
+                resulting in their size being based on the content that is inside them.
+                You can also define a set size for tracks created in the implicit grid with the grid-auto-rows and grid-auto-columns properties.
+                In the below example we use grid-auto-rows to ensure that tracks created in the implicit grid are 200 pixels tall.
+            </p>
+            
+            <h4><i>"What is a grid? Fixed and flexible track sizes"</i></h4>
+            <p>A grid is a set of intersecting horizontal and vertical lines defining columns and rows.
+               Elements can be placed onto the grid within these  column and row lines. 
+               CSS grid layout has the following features: You can create a grid with fixed 
+               track sizes – using pixels for example.
+               This sets the grid to the specified pixel which fits to the layout you desire.
+               You can also create a grid using flexible sizes with 
+               percentages or with the new fr unit designed for this purpose.
+               All the direct children are now grid items. In a web browser, you won't
+               see any difference to how these items are displayed before turning
+               them into a grid, as grid has created a single column grid for the items. 
+               At this point, you may find it useful to work with the Grid Inspector,
+              available as part of Firefox's Developer Tools. If you view this example
+              in Firefox and inspect the grid, you will see a small icon next to the
+              value grid. Click this and then the grid on this element will be overlaid in the browser window. 
+            </p>
+        </section>
+        <aside class="contact-section">
+                
+        </aside>
+        <section class="down-header">
+            <h4><i>"Item placement,Creation of additional tracks to hold content"</i></h4>
+        </section>
+        <section class="more-explain">
+                
+            <p>You can place items into a precise location on the grid using line
+               numbers, names or by targeting an area of the grid. Grid also contains
+                an algorithm to control the placement of items not given an explicit position on the grid.</p>
+        </section>
+        <section class="more-explanation">
+                You can define an explicit grid with grid layout. The Grid Layout
+                specification is flexible enough to add additional rows and columns
+                when needed. 
+                Features such as adding "as many columns that will fit into a container" are included.
+        </section>
+    </main>
+</body>
+</html>
